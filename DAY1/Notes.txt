@@ -1,0 +1,107 @@
+HTML AND CSS
+
+<!DOCTYPE html> - declaration of html
+<html> - root element of the page
+<head> - contains info of the page
+<body> - visible content of the site
+HEADER TAGS - h1,h2,h3,h4,h5
+p - paragraph (has default line break)
+br - line break 
+hr - horizontal line
+pre - pre formated text (default as in input)
+commands - note for dev
+
+Hyperlinks - a digital reference to data that can user can follow or be guided by clicking or tapping 
+
+a - anchor tag
+
+href - hypertext reference (it is an attribute)
+(attribute - a name value pair that modifies the behaviour of an element)
+
+target - it is also an attribute used for click events 
+title - displays additional information (hover event)
+
+href="mailto:someone@gmail.com" - to redirect mail someone from click event
+
+image 
+
+<img src> - to add images 
+alt - additional information
+height - specifies height
+width - specifies width
+
+<a href=""> <img src=""> </a> - image as a hyperlink
+
+audio
+
+<audio controls autoplay muted loop>
+    <source src="Futile - The Grey Room _ Golden Palms.mp3" type="audio/mpeg">
+</audio>
+
+also can be code like this
+
+<audio controls autoplay muted loop src="Futile - The Grey Room _ Golden Palms.mp3" type="audio/mpeg">
+</audio>
+
+audio - tag used to add audio 
+controls - to enable audio controls and visible in webpage
+autoplay - plays automatically when entering into the site
+muted - mutes initially 
+loop  - loops the song
+source - multiple sources can be added like mp3 wav etc
+src - file location 
+
+
+video 
+
+<video width="500px" controls autoplay muted loop>
+    <source src="Iron mans  Mark - V suit up Scene - Iron Man 2 - Marvel movie.mp4" type="video/mp4">
+</video>
+
+same as audio
+
+video - tag used to add video files
+source - multiple sources can be added like mp4 wav etc
+
+<a href=""> <video src="">
+a href can be added in video to use it as a hyperlink 
+
+FAVICON
+<link rel="icon" href="favicon.jpg" type="image/jpg">
+
+link - a self closing tag used to specify the relationship btw this doc and an external source 
+rel - specifies the relation btw them
+type - source format 
+href - relative file location
+
+TEXT FORMATTING 
+
+paragraph - p 
+bold - b
+italic - i 
+underline - u
+deleted (used to strikeout) - del
+big text - big 
+small text - small
+subscript (underneath text) - sub 
+superscript (above) - sup
+monospaced - tt 
+highlight - mark 
+     highlight colour can be changed using inline css 
+     <mark style="background-color:lightgreen"></mark>>
+
+span
+inline container to group elements for styling purposes
+
+div
+block container to group elements for styling purposes
+
+(refer container.html for more to know about span and div)
+
+LISTS - refer in lists.html
+
+TABLES - refer in tables.html 
+
+Button
+<Button> is used to create buttons
+<a> tags used to click events in button (hyperlinks)

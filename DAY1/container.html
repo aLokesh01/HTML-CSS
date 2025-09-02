@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>test05</title>
+</head>
+<body>
+    <h1>
+    <span style="background-color: aqua;">
+        SPAN CONTAINER
+    </span>
+</h1>
+<!--This is actually invalid HTML.
+By the HTML spec, block-level elements like <div> are not allowed inside heading tags (<h1>, <h2>, etc.). But browsers are forgiving.
+Most browsers “fix” your markup by closing the <h1> before the <div> starts, and then reopening it after.-->
+<h1>
+    <div style="background-color: aquamarine;">
+            DIV CONTAINER
+    </div>
+  </h1>
+
+  <div style="background-color: aquamarine;">
+  <h1>DIV CONTAINER</h1>
+</div>
+<!--According to the HTML spec, a <div> is not allowed inside a heading (<h1>).
+When the browser parses it, it sees something invalid and auto-corrects your structure.
+The browser actually turns your code into something like this internally: -->
+    
+<span style="background-color: aquamarine;">
+    <p>
+        yiuads asdvau asvduab asduva Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi magni minima vero cumque est iure? Sequi reprehenderit voluptates repellendus perferendis quisquam, iure, labore veniam aut voluptas necessitatibus ut vel.
+        fvayugiagdiadas sdfgbuskdf sdfsdfsdf
+    </p>
+</span>
+
+<!--<span> is an inline element.
+<p> is a block-level element.
+By the HTML spec, you cannot put a block element (<p>) inside an inline element (<span>).
+The browser sees this invalid markup and “fixes” it by pulling the <p> outside of the <span>.-->
+
+<p>
+    <span style="background-color: cyan;">
+        yiuads asdvau asvduab asduva Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi magni minima vero cumque est iure? Sequi reprehenderit voluptates repellendus perferendis quisquam, iure, labore veniam aut voluptas necessitatibus ut vel.
+        fvayugiagdiadas sdfgbuskdf sdfsdfsdf
+    </span>
+</p>
+
+
+<div style="background-color: aquamarine;">
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni ipsa veniam illo sunt hic quisquam quas tempora quia, similique, nulla optio assumenda! Vero inventore minus, consequatur rem et ipsa?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aperiam temporibus earum provident libero culpa quisquam tempore fugit amet, facilis quas ullam, quam vitae! Quis cumque incidunt a saepe optio?
+
+    </p>
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style="background-color: aqua;">Fuga delectus similique suscipit sed nam quisquam facere. Ea vel modi reprehenderit debitis aut. Quibusdam blanditiis animi sit, voluptas id itaque illum.</span>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error asperiores nostrum sint, nam, beatae fugiat iure eaque, soluta aut deleniti adipisci dicta? Et molestias nobis dolor eligendi, corrupti maiores cumque?
+</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi obcaecati molestiae sunt unde, laboriosam et ratione nostrum consectetur nihil voluptatibus minus <div style="background-color: aquamarine;"> corporis quis cum enim molestias architecto est exercitationem explicabo.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, magnam accusamus eum deserunt sunt non natus mollitia vel totam aliquid et facere assumenda fugit dolorem </div>doloribus! Aliquid libero optio dolores.
+</p>
+</body>
+</html>
