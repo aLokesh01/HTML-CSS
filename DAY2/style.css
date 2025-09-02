@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+h1{
+   color: wheat;
+}
+        
+#p1{
+    color: aqua;
+}
+
+#p2{
+    color: rgb(203, 245, 66);
+}
+
+#p3{
+    color: rgb(76, 16, 173);
+}
+
+#john{
+    color: rgb(255, 0, 0);
+}
+
+.odd{
+    font-style: italic;
+}
+
+.even{
+    font-style: bold;
+    font-weight: bolder;
+}

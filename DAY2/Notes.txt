@@ -1,0 +1,80 @@
+forms
+<form> tag is used to create form in html
+form contains few attributes to fill in
+1) action - after submiting form what location it do we want to send out form
+2) method- specifies whether it is a get request or post request 
+    get - insensitive information
+    post - confidential information - user data, passwords
+
+label used to specify what the input has been asked to enter
+for - Helps visually impaired users understand what the input field is for.
+      When the for attribute matches the id of an input element, 
+      clicking the label automatically focuses
+id - to match the for attribute      
+input - self closing input tag, default type is text
+type - to specify the type of the input
+text - default type
+password - type used for passwords, text will be hidden
+email - type used for emails
+tel - used to get mobile number from user
+   pattern - to specify the format of the number
+date - used to eneter a date in a interactive calender
+number - used to enter a number in a interactive input box where min, max, 
+value(default) can be set
+radio - it is used to select only one from the option given, also we should set value 
+when we submit the form, name to group the radio buttons
+chechbox - used to select multiple elements
+textarea - to enter some text in a box also the size can be changed using rows and cols
+
+select - these tags are used to select in the dropdown menu
+option - used to specify option inside dropdown menu
+
+file is used to receive file from user
+where we can mention the filetype using accept attribute
+accept can be included with multiple types to limit file range
+
+
+required - form doesnt submit without that info
+minlength - to set minimum lenght for the data
+maxlenght - to set maximum lenght for the data
+placeholder - provides an hint or a format of the input
+
+submit - to submit the data
+reset  - to reset the data 
+
+enctype="multipart/form-data" - when we send large data like files it will
+ break down the large data and reassembles 
+
+header and footer - semantic tags - they describe the meaning to both developer and browser
+they help organsize your content and also css properties can be used easily 
+
+header - are used for introductory content at the top of ur page such as a title, sub title
+ logo, a navigation bar. 
+
+footer - act as a container for holding concluding content at the bottom of the page
+ such as author, copyrights , contact info
+
+<header> - used to create header
+
+<footer> - used to create footer  
+&copy; - to use copyrights symbol  
+
+<main> - main content
+
+
+CSS - CASCADING STYLE SHEETS
+ - INTERNAL, INLINE, EXTERNAL
+
+inline - can be used within the  line of the code 
+internal - style tags can be used within head tags
+external - used by external css doc
+ <link rel="stylesheet" href="style.css"> used to link
+
+ id and class can be used to apply css on particular places
+ An id must be unique within a page (only one element can have that id).
+Selector in CSS: Referred with # (e.g., #header).
+ A class can be used by multiple elements.
+ Selector in CSS: Referred with . (dot) (e.g., .btn).
+
+ colors
+ colors can be found from multiple sites - named colours, color picker
